@@ -1,1 +1,1 @@
-from .version import VERSION, VERSION_SHORT
+from .version import *

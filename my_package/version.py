@@ -1,3 +1,5 @@
+import pandas as pd
+
 _MAJOR = "0"
 _MINOR = "1"
 # On main and in a nightly release the patch should be one ahead of the last
@@ -9,3 +11,15 @@ _SUFFIX = ""
 
 VERSION_SHORT = "{0}.{1}".format(_MAJOR, _MINOR)
 VERSION = "{0}.{1}.{2}{3}".format(_MAJOR, _MINOR, _PATCH, _SUFFIX)
+
+
+def test_method():
+
+    df = pd.DataFrame({'name': ['Raphael', 'Donatello'],
+                   'mask': ['red', 'purple'],
+                   'weapon': ['sai', 'bo staff']})
+
+    df.to_csv('test_csv.csv')
+    s = ' Test method run success'
+
+    return s
